@@ -15,11 +15,11 @@ const useStyles = makeStyles((theme) => ({
 const ConditionalTypo = () => {
     const match = useRouteMatch();
 
-    if (match.url === "saxdor-records/"){
+    if (match.url === "/"){
         return <Typography style={{flex:1}} >
             Tüm Kayıtlar
         </Typography>
-    }else if (match.url === "saxdor-records/new") {
+    }else if (match.url === "/new") {
         return <Typography style={{flex:1}} >
             Yeni Kayıt
         </Typography>
