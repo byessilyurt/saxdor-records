@@ -3,12 +3,19 @@ import { Grid, IconButton, Toolbar, Typography, AppBar } from '@material-ui/core
 import { makeStyles } from '@material-ui/core';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import { useRouteMatch } from 'react-router';
+import { useMediaQuery } from 'react-responsive'
 
 
-const useStyles = makeStyles((theme) => ({
-    appBarItem: {
-        flex: 1,
-    }
+
+const useStyles = makeStyles(() => ({
+        appbarSM: {
+            width: "70%",
+            float:"right",
+        },
+        appbarLG: {
+            width: "90%",
+            float:"right",
+        }
 }));
 
 
@@ -30,13 +37,14 @@ const ConditionalTypo = () => {
 
 
 const Navbar = () => {
+    const isSmall = useMediaQuery({ query: '(max-width: 900px)' })
 
     const classes = useStyles();
 
     return (
         <Grid item xs={12}>
-            <AppBar position="static">
-                <Toolbar>
+            <AppBar position="static" className={isSmall ? classes.appbarSM : classes.appbarLG}>
+                <Toolbar >
                 <ConditionalTypo/>
                     <IconButton color="inherit" >
                         <AccountCircleIcon />

@@ -28,7 +28,13 @@ const useStyles = makeStyles((theme) => ({
     },
     link: {
         textDecoration: "none",
+    },
+    Logos: {
+        maxWidth:200,
+        minWidth:50,
+        height:50,
     }
+
 }));
 
 
@@ -56,8 +62,8 @@ const DrawerLargeScreen = () => {
         <div>
             <List component="nav" aria-label="main mailbox folders" >
                 <ListItem >
-                    <ListItemIcon>
-                        <img src={logos} alt="logos" style={{ height: 40, width: 180, marginTop: 0 }}></img>
+                    <ListItemIcon className={classes.Logos}>
+                        <img src={logos} style={{width:"100%", height:"100%"}} alt="logos"></img>
                     </ListItemIcon>
                 </ListItem>
                 <Divider />
@@ -89,8 +95,8 @@ const DrawerSmallScreen = () => {
         <div>
         <List component="nav" aria-label="main mailbox folders" >
             <ListItem >
-                <ListItemIcon>
-                    <img src={logos} alt="logos" style={{ height: 40, width: 40, marginTop: 0 }}></img>
+                <ListItemIcon className={classes.Logos}>
+                    <img src={logos} alt="logos" style={{ height:"100%",width:"100%" }}></img>
                 </ListItemIcon>
             </ListItem>
             <Divider />
