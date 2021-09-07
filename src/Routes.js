@@ -12,8 +12,8 @@ const Routes = () => {
         <Drawer />
         <Grid item container xs={10} direction="row">
           <Switch>
-            <Route exact path="/" component={ListRequests} />
-            <Route exact path="/new" component={NewRequest} />
+            <Route exact path="saxdor-records/" component={ListRequests} />
+            <Route exact path="saxdor-records/new" component={NewRequest} />
           </Switch>
         </Grid>
       </Grid>
