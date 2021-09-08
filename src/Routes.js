@@ -9,7 +9,17 @@ const Routes = () => {
    
     <BrowserRouter>
       <Grid container >
+<<<<<<< HEAD
         <MiniDrawer />
+=======
+        <Drawer />
+        <Grid item container xs={10} direction="row">
+          <Switch>
+            <Route exact path="saxdor-records/" component={ListRequests} />
+            <Route exact path="saxdor-records/new" component={NewRequest} />
+          </Switch>
+        </Grid>
+>>>>>>> origin/main
       </Grid>
     </BrowserRouter>
   );
