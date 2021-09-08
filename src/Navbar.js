@@ -9,11 +9,10 @@ import { useMediaQuery } from 'react-responsive'
 
 const useStyles = makeStyles(() => ({
         appbarSM: {
-            width: "70%",
-            float:"right",
+            display:"none",
         },
         appbarLG: {
-            width: "90%",
+            width: "100%",
             float:"right",
         }
 }));
@@ -30,14 +29,13 @@ const ConditionalTypo = () => {
         return <Typography style={{flex:1}} >
             Yeni Kayıt
         </Typography>
-    }else 
-    return <h2> Hello </h2>
+    }
 }
 
 
 
 const Navbar = () => {
-    const isSmall = useMediaQuery({ query: '(max-width: 900px)' })
+    const isSmall = useMediaQuery({ query: '(max-width: 600px)' })
 
     const classes = useStyles();
 

@@ -14,20 +14,10 @@ import Paper from '@material-ui/core/Paper';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Switch from '@material-ui/core/Switch';
 import Collapsible from './Collapsible';
-
-
 import { useObserver } from 'mobx-react';
 import { useRecordsStore } from './recordsContext';
 
 
-
-// import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-
-//const ExpandIcon = () => {
-//    return (
-//        <ExpandMoreIcon/>
-//    )
-//}
 
 
 
@@ -251,7 +241,7 @@ export default function TableItem() {
                 </Paper>
                 <FormControlLabel
                     control={<Switch checked={dense} onChange={handleChangeDense} />}
-                    label="Dense padding"
+                    label="Tabloyu daralt"
                 />
             </div>
         </Grid>

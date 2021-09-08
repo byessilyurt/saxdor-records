@@ -9,12 +9,8 @@ import InputLabel from '@material-ui/core/InputLabel';
 import Divider from '@material-ui/core/Divider';
 import { Fab } from '@material-ui/core';
 import SaveIcon from '@material-ui/icons/Save';
-import {
-    DatePicker,
-    MuiPickersUtilsProvider,
-} from '@material-ui/pickers';
+import { DatePicker, MuiPickersUtilsProvider} from '@material-ui/pickers';
 import DateFnsUtils from '@date-io/date-fns';
-
 import { useRecordsStore } from './recordsContext';
 import moment from 'moment';
 
@@ -70,9 +66,8 @@ const RequestForm = () => {
 
 
     const [kayitTipi, setKayitTipi] = React.useState("");
-    //   const [tarih, setTarih] = React.useState(new Date());
     const [detay, setDetay] = React.useState("");
-    const [ozet, setOzet] = React.useState("");
+    const [ozet, setOzet] = React.useState();
 
     moment.locale("tr")
     const tarih = moment().format('LLLL')

@@ -6,7 +6,6 @@ import TableItem from './TableItem';
 function ListRequests() {
   return (
         <>
-        <Navbar />
         <Grid item xs={1}></Grid>
          <TableItem />
         <Grid item xs={1}></Grid>

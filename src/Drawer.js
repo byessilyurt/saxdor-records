@@ -33,13 +33,14 @@ const useStyles = makeStyles((theme) => ({
         maxWidth:200,
         minWidth:50,
         height:50,
+        position:"absolute"
     }
 
 }));
 
 
 const Drawer = () => {
-    const isLargeScreen = useMediaQuery({ query: '(min-width: 800px)' })
+    const isLargeScreen = useMediaQuery({ query: '(min-width: 600px)' })
 
     return (
         <Grid item container xs={2} direction="column" >
@@ -63,7 +64,7 @@ const DrawerLargeScreen = () => {
             <List component="nav" aria-label="main mailbox folders" >
                 <ListItem >
                     <ListItemIcon className={classes.Logos}>
-                        <img src={logos} style={{width:"100%", height:"100%"}} alt="logos"></img>
+                        <img src={logos} style={{width:"100%", height:"100%", }} alt="logos"></img>
                     </ListItemIcon>
                 </ListItem>
                 <Divider />

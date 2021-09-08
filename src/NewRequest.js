@@ -11,7 +11,6 @@ const NewRequest = () => {
 
     return (
           <>
-          <Navbar />
           <Grid item xs={1}></Grid>
            <RequestForm />
           <Grid item xs={1}></Grid>
